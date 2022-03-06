@@ -1,0 +1,29 @@
+dl {
+    display: grid;
+    grid-auto-flow: column dense;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: var(--sp-sm-6) 0;
+}
+
+dl dt {
+    font-weight: var(--fw-sm);
+    font-size: var(--fs-base);
+    color: var(--fg-secondary);
+    line-height: var(--sp-lg-5);
+}
+
+dl dd {
+    font-size: var(--fs-lg-1);
+    line-height: var(--sp-lg-2);
+}
+
+dl > .size-1 {
+    grid-column: span 1;
+}
+dl > .size-2 {
+    grid-column: span 2;
+}
+dl > .size-3 {
+    grid-column: span 3;
+}

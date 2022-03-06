@@ -1,0 +1,64 @@
+
+.hi-danger{
+    --highlight: var(--hi-danger);
+}
+.hi-warning{
+    --highlight: var(--hi-warning);
+}
+.hi-success{
+    --highlight: var(--hi-success);
+}
+.hi-muted{
+    --highlight: var(--fg-secondary);
+}
+
+.hi::before{
+    --hi-size: 12px;
+
+    content:"";
+    display: inline-block;
+    width: var(--hi-size);
+    height: var(--hi-size);
+    margin-right: var(--sp-sm-4);
+    border-radius: 50%;
+    background-color: var(--highlight);
+}
+
+.avatar.hi::before {
+    position: absolute;
+
+    right: -4px;
+    bottom: 5px;
+    border: 4px solid var(--bg-tertiary);
+    margin-right: 0;
+}
+
+.avatar {
+    position: relative;
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    background-color: var(--bg-primary);
+    border-radius: 50%;
+
+    background-image: var(--avatar-url);
+    background-position: center;
+    background-size: cover;
+}
+
+.status {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    gap: var(--sp-sm-4);
+
+    padding: var(--sp-sm-5) var(--sp-base);
+    padding-left: var(--sp-sm-2);
+    border-radius: var(--bd-radius);
+
+    background-color: var(--bg-secondary);
+
+    font-weight: var(--fw-sm);
+}
+
+.status::before {
+    place-self: center;
+}

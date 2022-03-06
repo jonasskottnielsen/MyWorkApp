@@ -1,0 +1,81 @@
+.team {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: var(--sp-lg-5);
+}
+
+.team__member {
+    --avatar-size: 58px;
+    position: relative;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "avatar name" "avatar title";
+    gap: var(--sp-sm-5) var(--sp-sm-1);
+
+    cursor: pointer;
+}
+
+.team__member > .avatar {
+    grid-area: avatar;
+}
+
+.team__member > .name {
+    grid-area: name;
+
+    align-self: end;
+}
+
+.team__member > .title {
+    grid-area: title;
+}
+
+.team__member > .action-menu {
+    position: absolute;
+
+    top: 27px;
+    left: 30px;
+}
+
+.action-menu {
+    --item-size: 24px;
+    --padding: var(--sp-sm-6);
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: var(--sp-sm-4);
+
+    padding: var(--item-size);
+    border-radius: calc(var(--item-size) / 2 + var(--padding));
+
+    background-color: var(--bg-primary);
+
+    clip-path: circle(0% at 20px 50%);
+    transition: var(--transition-slow);
+    transition-property: clip-path;
+}
+
+.action-menu.open {
+    clip-path: circle(150% at 20px 50%);
+}
+
+.action-menu .status {
+    font-size: var(--fs-sm-1);
+}
+
+.action-menu a {
+    display: grid;
+    place-content: center;
+    
+    width: var(--item-size);
+    height: var(--item-size);
+    border-radius: 50%;
+
+    background: var(--bg-secondary);
+    color: var(--fg-primary);
+}
+.action-menu a:hover {
+    color: var(--hi-primary);
+}

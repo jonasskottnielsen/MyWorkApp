@@ -1,0 +1,62 @@
+section {
+    --icon-size: 58px;
+    --padding: var(--sp-lg-1);
+    background: var(--bg-tertiary);
+    border: var(--bd);
+    border-radius: var(--bd-radius);
+
+    display: grid;
+    grid-template-rows: max-content 1fr;
+}
+
+section > header {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: var(--sp-sm-1);
+    
+    grid-template-areas: 
+    "icon header"
+    "icon sub-header";
+    padding: var(--padding);
+}
+
+section > header > .icon {
+    grid-area: icon;
+
+    display: grid;
+    place-content: center;
+    border-radius: calc(2 / 3 * var(--bd-radius));
+
+    height: var(--icon-size);
+    width: var(--icon-size);
+    background: var(--bg-primary);
+
+    color: var(--hi-primary);
+
+}
+
+section > header > h2 {
+    grid-area: header;
+
+    font-size: var(--fs-lg-1);
+    align-self: end;
+}
+
+section > header > p {
+    grid-area: sub-header;
+
+    font-weight: var(--fw-sm);
+}
+
+section > :nth-child(2) {
+    margin: 0 var(--padding) var(--padding);
+    place-self: stretch; 
+}
+
+section.decorrated {
+    background-image: url();
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+

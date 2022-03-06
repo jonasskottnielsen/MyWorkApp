@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Project Dashboard
+    </title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.base.css"> 
+<link rel="stylesheet" type="text/css" href="style.grid.css">
+<link rel="stylesheet" type="text/css" href="style.card.css">
+<link rel="stylesheet" type="text/css" href="style.key-value.css">
+<link rel="stylesheet" type="text/css" href="style.elements.css">
+<link rel="stylesheet" type="text/css" href="style.project.css">
+<link rel="stylesheet" type="text/css" href="style.my-team.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+ 
+<body>
+    <main>
+        <nav></nav>
+        <article>
+            <header>
+                <h1> My Work</h1>
+            </header>
+            <div class="grid">
+                <section class="my-team">
+                    <header>
+                        <div class="icon">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <title>Iconly/Light/Bookmark</title>
+                                <g id="Iconly/Light/Bookmark" stroke="currentColor" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                    <g id="Bookmark" transform="translate(4.200000, 2.300000)" stroke="#000000" stroke-width="2">
+                                        <path d="M15.5388471,3.85363409 C15.5388471,1.10275689 13.6581454,-2.13162821e-14 10.9503759,-2.13162821e-14 L4.5914787,-2.13162821e-14 C1.96691729,-2.13162821e-14 2.66453526e-15,1.02756892 2.66453526e-15,3.67017544 L2.66453526e-15,18.393985 C2.66453526e-15,19.1197995 0.780952381,19.5769424 1.41353383,19.2220551 L7.79548872,15.6421053 L14.1223058,19.2160401 C14.7558897,19.5729323 15.5388471,19.1157895 15.5388471,18.3889724 L15.5388471,3.85363409 Z" id="Stroke-1"></path>
+                                        <line x1="4.071178" y1="6.72802013" x2="11.3894737" y2="6.72802013" id="Stroke-3"></line>
+                                    </g>
+                                </g>
+                            </svg>
+                    </div>
+                        <h2>My Team</h2>
+                        <p>
+                            <span>6</span>
+                            <span class="text--muted">
+                                &#x2002;Members
+                            </span>
+                        </p>
+                    </header>
+                    <div class="team">
+                        <template id="template-team-member">
+                            <div class="team__member">
+                                <div class="avatar hi"></div>
+                                <div class="name"></div>
+                                <div class="title text--light"></div>
+                                <div class="action-menu">
+                                    <div class="status hi"></div>
+                                    <a href="#"><svg width="16" height="16" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="Iconly/Light/Message" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                            <g id="Message" transform="translate(2.000000, 3.000000)" stroke="#000000" stroke-width="1.5">
+                                                <path d="M15.9026143,5.8511436 L11.4593272,9.46418164 C10.6198313,10.1301843 9.4387043,10.1301843 8.59920842,9.46418164 L4.11842516,5.8511436" id="Stroke-1"></path>
+                                                <path d="M14.9088637,17.9999789 C17.9502135,18.0083748 20,15.5095497 20,12.4383622 L20,5.57001263 C20,2.49882508 17.9502135,5.32907052e-15 14.9088637,5.32907052e-15 L5.09113634,5.32907052e-15 C2.04978648,5.32907052e-15 1.77635684e-15,2.49882508 1.77635684e-15,5.57001263 L1.77635684e-15,12.4383622 C1.77635684e-15,15.5095497 2.04978648,18.0083748 5.09113634,17.9999789 L14.9088637,17.9999789 Z" id="Stroke-3"></path>
+                                            </g>
+                                        </g>
+                                    </svg></a>
+                                    <a href="#"><svg width="16" height="16" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="Iconly/Light/Calendar" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                            <g id="Calendar" transform="translate(3.000000, 2.000000)" stroke="#000000" stroke-width="1.5">
+                                                <line x1="0.0926400664" y1="7.40425532" x2="17.9165888" y2="7.40425532" id="Line_200"></line>
+                                                <line x1="13.4420736" y1="11.3096927" x2="13.4513376" y2="11.3096927" id="Line_201"></line>
+                                                <line x1="9.00461445" y1="11.3096927" x2="9.01387846" y2="11.3096927" id="Line_202"></line>
+                                                <line x1="4.55789127" y1="11.3096927" x2="4.56715527" y2="11.3096927" id="Line_203"></line>
+                                                <line x1="13.4420736" y1="15.1962175" x2="13.4513376" y2="15.1962175" id="Line_204"></line>
+                                                <line x1="9.00461445" y1="15.1962175" x2="9.01387846" y2="15.1962175" id="Line_205"></line>
+                                                <line x1="4.55789127" y1="15.1962175" x2="4.56715527" y2="15.1962175" id="Line_206"></line>
+                                                <line x1="13.0437213" y1="-2.26485497e-14" x2="13.0437213" y2="3.29078014" id="Line_207"></line>
+                                                <line x1="4.96550756" y1="-2.26485497e-14" x2="4.96550756" y2="3.29078014" id="Line_208"></line>
+                                                <path d="M13.2382655,1.57919622 L4.77096342,1.57919622 C1.83427331,1.57919622 0,3.21513002 0,6.22222222 L0,15.2718676 C0,18.3262411 1.83427331,20 4.77096342,20 L13.2290015,20 C16.1749556,20 18,18.3546099 18,15.3475177 L18,6.22222222 C18.0092289,3.21513002 16.1842196,1.57919622 13.2382655,1.57919622 Z" id="Path"></path>
+                                            </g>
+                                        </g>
+                                    </svg></a>
+                                    <a href="#"><svg width="16" height="16" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="Iconly/Light/Category" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                            <g id="Category" transform="translate(2.999141, 3.000000)" stroke="#000000" stroke-width="1.5">
+                                                <path d="M0.000858865205,3.5 C0.000858865205,0.874787053 0.0289681101,0 3.50085887,0 C6.9727494,0 7.00085887,0.874787053 7.00085887,3.5 C7.00085887,6.12521295 7.01193168,7 3.50085887,7 C-0.010214169,7 0.000858865205,6.12521295 0.000858865205,3.5 Z" id="Stroke-1"></path>
+                                                <path d="M11.0008589,3.5 C11.0008589,0.874787053 11.0289681,0 14.5008589,0 C17.9727494,0 18.0008589,0.874787053 18.0008589,3.5 C18.0008589,6.12521295 18.0119317,7 14.5008589,7 C10.9897858,7 11.0008589,6.12521295 11.0008589,3.5 Z" id="Stroke-3"></path>
+                                                <path d="M0.000858865205,14.5 C0.000858865205,11.8747871 0.0289681101,11 3.50085887,11 C6.9727494,11 7.00085887,11.8747871 7.00085887,14.5 C7.00085887,17.1252129 7.01193168,18 3.50085887,18 C-0.010214169,18 0.000858865205,17.1252129 0.000858865205,14.5 Z" id="Stroke-5"></path>
+                                                <path d="M11.0008589,14.5 C11.0008589,11.8747871 11.0289681,11 14.5008589,11 C17.9727494,11 18.0008589,11.8747871 18.0008589,14.5 C18.0008589,17.1252129 18.0119317,18 14.5008589,18 C10.9897858,18 11.0008589,17.1252129 11.0008589,14.5 Z" id="Stroke-7"></path>
+                                            </g>
+                                        </g>
+                                    </svg></a>
+                                    
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                </section>
+                <section class="messages"></section>
+                <section class="card my-work decorated">
+                    <header>
+                        <div class="icon">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <title>Iconly/Light/Bookmark</title>
+                                <g id="Iconly/Light/Bookmark" stroke="currentColor" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                    <g id="Bookmark" transform="translate(4.200000, 2.300000)" stroke="#000000" stroke-width="2">
+                                        <path d="M15.5388471,3.85363409 C15.5388471,1.10275689 13.6581454,-2.13162821e-14 10.9503759,-2.13162821e-14 L4.5914787,-2.13162821e-14 C1.96691729,-2.13162821e-14 2.66453526e-15,1.02756892 2.66453526e-15,3.67017544 L2.66453526e-15,18.393985 C2.66453526e-15,19.1197995 0.780952381,19.5769424 1.41353383,19.2220551 L7.79548872,15.6421053 L14.1223058,19.2160401 C14.7558897,19.5729323 15.5388471,19.1157895 15.5388471,18.3889724 L15.5388471,3.85363409 Z" id="Stroke-1"></path>
+                                        <line x1="4.071178" y1="6.72802013" x2="11.3894737" y2="6.72802013" id="Stroke-3"></line>
+                                    </g>
+                                </g>
+                            </svg>
+                    </div>
+                        <h2>My Work</h2>
+                        <p>
+                            <span>6</span>
+                            <span class="text--muted">
+                                &#x2002;OpenTickets
+                            </span>
+                        </p>
+                    </header>
+                    <dl>
+                        <div class="size-1">
+                            <dt>Overdue</dt>
+                            <dd class="hi hi-danger">1</dd>
+                        </div>
+                        <div class="size-2">
+                            <dt>High Priority </dt>
+                            <dd class="hi hi-warning">2</dd>
+                        </div>
+                        <div class="size-3">
+                            <dt>Overdue</dt>
+                            <dd>56 <span class="text--muted">hours</span></dd>
+                        </div>
+                    </dl>
+                </section>
+                <section class="project-1">
+                    <header>
+                        <div class="icon">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <title>Iconly/Light/Image</title>
+                                <g id="Iconly/Light/Image" stroke="currentColor" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                    <g id="Image" transform="translate(2.000000, 2.000000)" stroke="#000000" stroke-width="1.5">
+                                        <path d="M19.21,5.8992 L19.21,14.0502 C19.21,17.0702 17.32,19.2002 14.3,19.2002 L5.65,19.2002 C2.63,19.2002 0.75,17.0702 0.75,14.0502 L0.75,5.8992 C0.75,2.8792 2.64,0.7502 5.65,0.7502 L14.3,0.7502 C17.32,0.7502 19.21,2.8792 19.21,5.8992 Z" id="Stroke-1"></path>
+                                        <path d="M3.2813,14.4309 L4.8093,12.8179 C5.3403,12.2549 6.2253,12.2279 6.7893,12.7579 C6.8063,12.7749 7.7263,13.7099 7.7263,13.7099 C8.2813,14.2749 9.1883,14.2839 9.7533,13.7299 C9.7903,13.6939 12.0873,10.9079 12.0873,10.9079 C12.6793,10.1889 13.7423,10.0859 14.4623,10.6789 C14.5103,10.7189 16.6803,12.9459 16.6803,12.9459" id="Stroke-3"></path>
+                                        <path d="M8.3126,7.1331 C8.3126,8.1021 7.5276,8.8871 6.5586,8.8871 C5.5896,8.8871 4.8046,8.1021 4.8046,7.1331 C4.8046,6.1641 5.5896,5.3791 6.5586,5.3791 C7.5276,5.3801 8.3126,6.1641 8.3126,7.1331 Z" id="Stroke-5"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <h2>Page hero</h2>
+                        <p class="text--muted">
+                           frontera
+                        </p>
+                    </header>
+                    <div class="project">
+                        <div class="project__members">
+                            <a href="#" class="avatar" style="--avatar-url: url('assets/random.jpg')"></a>
+                            <a href="#" class="avatar" style="--avatar-url: url('assets/random2.jpg')"></a>
+                        </div>
+                        <div class="progress">
+                            <div class="progress__text">
+                                72 / 120 <span class="text--light">&#x2002;hours</span>
+                            </div>
+                            <div class="progress__percentage">
+                                60 <span class="text--light">&#x2002;%</span>
+                            </div>
+                            <div class="progress__bar" style="--value: 60%;"></div>
+                        </div>
+                        <div class="status hi hi-danger">6 days left</div>
+                    </div>
+                </section>
+                <section class="project-2">
+                    <header>
+                        <div class="icon">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <title>Iconly/Light/Image</title>
+                                <g id="Iconly/Light/Image" stroke="currentColor" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                    <g id="Image" transform="translate(2.000000, 2.000000)" stroke="#000000" stroke-width="1.5">
+                                        <path d="M19.21,5.8992 L19.21,14.0502 C19.21,17.0702 17.32,19.2002 14.3,19.2002 L5.65,19.2002 C2.63,19.2002 0.75,17.0702 0.75,14.0502 L0.75,5.8992 C0.75,2.8792 2.64,0.7502 5.65,0.7502 L14.3,0.7502 C17.32,0.7502 19.21,2.8792 19.21,5.8992 Z" id="Stroke-1"></path>
+                                        <path d="M3.2813,14.4309 L4.8093,12.8179 C5.3403,12.2549 6.2253,12.2279 6.7893,12.7579 C6.8063,12.7749 7.7263,13.7099 7.7263,13.7099 C8.2813,14.2749 9.1883,14.2839 9.7533,13.7299 C9.7903,13.6939 12.0873,10.9079 12.0873,10.9079 C12.6793,10.1889 13.7423,10.0859 14.4623,10.6789 C14.5103,10.7189 16.6803,12.9459 16.6803,12.9459" id="Stroke-3"></path>
+                                        <path d="M8.3126,7.1331 C8.3126,8.1021 7.5276,8.8871 6.5586,8.8871 C5.5896,8.8871 4.8046,8.1021 4.8046,7.1331 C4.8046,6.1641 5.5896,5.3791 6.5586,5.3791 C7.5276,5.3801 8.3126,6.1641 8.3126,7.1331 Z" id="Stroke-5"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <h2>Dashboard</h2>
+                        <p class="text--muted">
+                           my:qube
+                        </p>
+                    </header>
+                    <div class="project">
+                        <div class="project__members">
+                            <a href="#" class="avatar" style="--avatar-url: url('assets/random2.jpg')"></a>
+                            <a href="#" class="avatar" style="--avatar-url: url('assets/random3.jpg')"></a>
+                            <a href="#" class="avatar" style="--avatar-url: url('assets/random4.jpg')"></a>
+                        </div>
+                        <div class="progress">
+                            <div class="progress__text">
+                                51 / 60 <span class="text--light">&#x2002;hours</span>
+                            </div>
+                            <div class="progress__percentage">
+                                85 <span class="text--light">&#x2002;%</span>
+                            </div>
+                            <div class="progress__bar" style="--value: 85%;"></div>
+                        </div>
+                        <div class="status hi hi-warning">4 days left</div>
+                    </div>
+                </section>
+                <section class="project-3">
+                    <header>
+                        <div class="icon">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <title>Iconly/Light/Image</title>
+                                <g id="Iconly/Light/Image" stroke="currentColor" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                    <g id="Image" transform="translate(2.000000, 2.000000)" stroke="#000000" stroke-width="1.5">
+                                        <path d="M19.21,5.8992 L19.21,14.0502 C19.21,17.0702 17.32,19.2002 14.3,19.2002 L5.65,19.2002 C2.63,19.2002 0.75,17.0702 0.75,14.0502 L0.75,5.8992 C0.75,2.8792 2.64,0.7502 5.65,0.7502 L14.3,0.7502 C17.32,0.7502 19.21,2.8792 19.21,5.8992 Z" id="Stroke-1"></path>
+                                        <path d="M3.2813,14.4309 L4.8093,12.8179 C5.3403,12.2549 6.2253,12.2279 6.7893,12.7579 C6.8063,12.7749 7.7263,13.7099 7.7263,13.7099 C8.2813,14.2749 9.1883,14.2839 9.7533,13.7299 C9.7903,13.6939 12.0873,10.9079 12.0873,10.9079 C12.6793,10.1889 13.7423,10.0859 14.4623,10.6789 C14.5103,10.7189 16.6803,12.9459 16.6803,12.9459" id="Stroke-3"></path>
+                                        <path d="M8.3126,7.1331 C8.3126,8.1021 7.5276,8.8871 6.5586,8.8871 C5.5896,8.8871 4.8046,8.1021 4.8046,7.1331 C4.8046,6.1641 5.5896,5.3791 6.5586,5.3791 C7.5276,5.3801 8.3126,6.1641 8.3126,7.1331 Z" id="Stroke-5"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <h2>Redesign</h2>
+                        <p class="text--muted">
+                           Alexis corp.
+                        </p>
+                    </header>
+                    <div class="project">
+                        <div class="project__members">
+                            <a href="#" class="avatar" style="--avatar-url: url('assets/random4.jpg')"></a>
+                            <a href="#" class="avatar" style="--avatar-url: url('assets/random2.jpg')"></a>
+                            <a href="#" class="avatar" style="--avatar-url: url('assets/random.jpg')"></a>
+                            <a href="#" class="overflow">+2</a>
+                        </div>
+                        <div class="progress">
+                            <div class="progress__text">
+                                115 / 480 <span class="text--light">&#x2002;hours</span>
+                            </div>
+                            <div class="progress__percentage">
+                                24 <span class="text--light">&#x2002;%</span>
+                            </div>
+                            <div class="progress__bar" style="--value: 24%;"></div>
+                        </div>
+                        <div class="status hi hi-success">8 weeks left</div>
+                    </div>
+                </section>
+                <section class="my-day"></section>
+            </div>
+        </article>
+    </main>
+    <script type="text/javascript" src="./app.js"></script>
+</body>
+
+</html>

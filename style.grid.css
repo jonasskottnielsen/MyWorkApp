@@ -1,0 +1,35 @@
+.grid {
+    display: grid;
+    gap: var(--sp-lg-5);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-template-areas: 
+        'my-team my-team messages my-day'    
+        'my-team my-team my-work my-day'
+        'my-team my-team my-work my-day'
+        'project-1 project-2 project-3 my-day'
+        'project-1 project-2 project-3 my-day';
+}
+.my-team {
+    grid-area: my-team;
+}
+.messages {
+    grid-area: messages;
+}
+.my-work {
+    grid-area: my-work;
+}
+
+.project-1 {
+    grid-area: project-1;
+}
+.project-2 {
+    grid-area: project-2;
+}
+.project-3 {
+    grid-area: project-3;
+}
+.my-day {
+    grid-area: my-day;
+}

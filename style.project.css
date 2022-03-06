@@ -1,0 +1,74 @@
+.project {
+    display: grid;
+    justify-items: start;
+    grid-auto-rows: max-content;
+    gap: var(--sp-sm-4);
+}
+
+.project__members {
+    --avatar-size: 32px;
+
+    display: grid;
+    grid-auto-flow: column;
+    gap: var(--sp-sm-4);
+}
+
+.project__members .overflow {
+    display:  grid;
+    place-content: center;
+
+    width:var(--avatar-size);
+    height: var(--avatar-size);
+    border-radius: 50%;
+
+    background-color: var(--bg-primary);
+    color: var(--hi-primary);
+    text-decoration: none;
+}
+
+.progress {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, max-content);
+    grid-template-areas: 
+        "text percentage"
+        "bar bar";
+    gap: var(--sp-sm-6);
+    place-self: stretch;
+
+    font-size: var(--fs-sm-1);
+}
+
+.progress__text {
+    grid-area: text;
+}
+
+.progress__percentage {
+    grid-area: percentage;
+    justify-self: end;
+}
+
+.progress__bar {
+    --size: 5px;
+
+    grid-area: bar;
+    
+    position: relative;
+
+    height: var(--size);
+    border-radius: var(--size);
+    background-color: var(--bg-secondary);
+}
+
+.progress__bar::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: var(--value);
+    border-radius: var(--size);
+
+    background: var(--bg-hi);
+}
