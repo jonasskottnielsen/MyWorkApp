@@ -60,3 +60,13 @@ section.decorrated {
     background-repeat: no-repeat;
 }
 
+section.highlight {
+    background: rgb(98,247,240);
+    background: linear-gradient(99deg, rgba(98,247,240,1) 0%, rgba(131,181,253,1) 40%, rgba(168,138,253,1) 100%);
+   
+}
+
+section.highlight > header > .icon {
+    background-color: rgba(var(--bg-primary-rgb), 0.2);
+    color: var(--fg-primary);
+}

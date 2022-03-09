@@ -11,7 +11,8 @@ html {
 }
 :root {
     --bg-root: rgb(66,68,87);
-    --bg-primary: rgb(32,33,42);
+    --bg-primary-rgb: 32,33,42;
+    --bg-primary: rgb(var(--bg-primary-rgb));
     --bg-secondary: rgb(55,57,63);
     --bg-tertiary: rgb(40,41,50);
     --hi-success: rgb(17,201,0);

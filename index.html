@@ -13,15 +13,21 @@
 <link rel="stylesheet" type="text/css" href="style.elements.css">
 <link rel="stylesheet" type="text/css" href="style.project.css">
 <link rel="stylesheet" type="text/css" href="style.my-team.css">
+<link rel="stylesheet" type="text/css" href="style.calendar.css">
+<link rel="stylesheet" type="text/css" href="style.nav.css">
+<link rel="stylesheet" type="text/css" href="style.responsiveness.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
  
 <body>
     <main>
-        <nav></nav>
+        <nav>
+
+        </nav>
         <article>
             <header>
+                <a href="#" class="menu-toggle"></a>
                 <h1> My Work</h1>
             </header>
             <div class="grid">
@@ -94,7 +100,25 @@
                         </template>
                     </div>
                 </section>
-                <section class="messages"></section>
+                <section class="messages highlight">
+                    <header>
+                        <div class="icon">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <title>Iconly/Light/Bookmark</title>
+                                <g id="Iconly/Light/Bookmark" stroke="currentColor" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                    <g id="Bookmark" transform="translate(4.200000, 2.300000)" stroke="#000000" stroke-width="2">
+                                        <path d="M15.5388471,3.85363409 C15.5388471,1.10275689 13.6581454,-2.13162821e-14 10.9503759,-2.13162821e-14 L4.5914787,-2.13162821e-14 C1.96691729,-2.13162821e-14 2.66453526e-15,1.02756892 2.66453526e-15,3.67017544 L2.66453526e-15,18.393985 C2.66453526e-15,19.1197995 0.780952381,19.5769424 1.41353383,19.2220551 L7.79548872,15.6421053 L14.1223058,19.2160401 C14.7558897,19.5729323 15.5388471,19.1157895 15.5388471,18.3889724 L15.5388471,3.85363409 Z" id="Stroke-1"></path>
+                                        <line x1="4.071178" y1="6.72802013" x2="11.3894737" y2="6.72802013" id="Stroke-3"></line>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <h2>Messages</h2>
+                        <p>
+                            8&#x2002;Unread
+                        </p>
+                    </header>
+                </section>
                 <section class="card my-work decorated">
                     <header>
                         <div class="icon">
@@ -107,7 +131,7 @@
                                     </g>
                                 </g>
                             </svg>
-                    </div>
+                        </div>
                         <h2>My Work</h2>
                         <p>
                             <span>6</span>
@@ -131,7 +155,7 @@
                         </div>
                     </dl>
                 </section>
-                <section class="project-1">
+                <section class="my-project project-1">
                     <header>
                         <div class="icon">
                             <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -167,7 +191,7 @@
                         <div class="status hi hi-danger">6 days left</div>
                     </div>
                 </section>
-                <section class="project-2">
+                <section class="my-project project-2">
                     <header>
                         <div class="icon">
                             <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -204,7 +228,7 @@
                         <div class="status hi hi-warning">4 days left</div>
                     </div>
                 </section>
-                <section class="project-3">
+                <section class="my-project project-3">
                     <header>
                         <div class="icon">
                             <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -242,7 +266,43 @@
                         <div class="status hi hi-success">8 weeks left</div>
                     </div>
                 </section>
-                <section class="my-day"></section>
+                <section class="my-day">
+                    <header>
+                        <div class="icon">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="Iconly/Light/Bookmark" stroke="currentColor" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                    <g id="Bookmark" transform="translate(4.200000, 2.300000)" stroke="#000000" stroke-width="2">
+                                        <path d="M15.5388471,3.85363409 C15.5388471,1.10275689 13.6581454,-2.13162821e-14 10.9503759,-2.13162821e-14 L4.5914787,-2.13162821e-14 C1.96691729,-2.13162821e-14 2.66453526e-15,1.02756892 2.66453526e-15,3.67017544 L2.66453526e-15,18.393985 C2.66453526e-15,19.1197995 0.780952381,19.5769424 1.41353383,19.2220551 L7.79548872,15.6421053 L14.1223058,19.2160401 C14.7558897,19.5729323 15.5388471,19.1157895 15.5388471,18.3889724 L15.5388471,3.85363409 Z" id="Stroke-1"></path>
+                                        <line x1="4.071178" y1="6.72802013" x2="11.3894737" y2="6.72802013" id="Stroke-3"></line>
+                                    </g>
+                                </g>
+                            </svg>
+                    </div>
+                        <h2>My day</h2>
+                        <p>
+                            <span>3</span>
+                            <span class="text--muted">
+                                &#x2002;Events
+                            </span>
+                        </p>
+                    </header>
+                    <div class="calendar">
+                        <div class="calendar__hour-grid">
+                            <template id="template-hour">
+                                <div class="calendar__hour">
+                                    <p class="label"></p>
+                                </div>
+                            </template>
+                        </div>
+                        <div class="calendar__events">
+                            <template id="template-event">
+                                <div class="calendar__event">
+                                    <p class="label"></p>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                </section>
             </div>
         </article>
     </main>

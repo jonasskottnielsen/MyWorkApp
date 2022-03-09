@@ -1,0 +1,83 @@
+.calendar {
+    --left-margin: var(--sp-base);
+    --hours: calc(var(--end-hour) - var(--start-hour));
+    --rows: calc(var(--resolution) - var(--hours));
+    position: relative;
+}
+
+.calendar > * {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.calendar__hour-grid {
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: 1fr;
+}
+
+.calendar__hour {
+    border-top: 1px dashed var(--bg-secondary);
+}
+
+.calendar__hour:last-child {
+    border-bottom: 1px dashed var(--bg-secondary);
+}
+
+.calendar__hour > .label {
+    font-size: var(--fs-sm-1);
+    line-height: 2.5;
+}
+
+.calendar__hour.active {
+    position: relative;
+
+    color: var(--hi-primary);
+}
+
+.calendar__hour.active::before {
+    content: "";
+    position: absolute;
+    left: calc(1.5*var(--left-margin));
+    right: 0;
+    height: 1px;
+    top: calc(100% * var(--current-minute)/60);
+    background-image: url('assets/current-hour.svg');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 100%;
+}
+
+.calender__events {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(var(--rows), 1fr);
+
+    left: calc(2* var(--left-margin));
+}
+
+.calender__event {
+    --start: 0;
+    --end: 0;
+    --start-row: 0;
+    grid-row-start: calc((var(--start) - var(--start-hour))* var(--resolution) + 1);
+    grid-row-end: calc((var(--end) - var(--start-hour))* var(--resolution)+1);
+
+    padding: var(--sp-sm-2);
+    border-radius: calc(2/3 * var(--bd-radius));
+
+    background-image: url('./assets/random.jpg'), var(--bg-hi);
+    background-repeat: no-repeat;
+}
+
+.calendar__event > .label {
+    font-weight: var(--fw-sm);
+}
+
+.calendar__event.past {
+    background: rgb(85,126,147);
+background: linear-gradient(99deg, rgba(85,126,147,1) 0%, rgba(68,108,164,1) 40%, rgba(53,56,201,1) 100%);
+}

@@ -1,0 +1,70 @@
+nav {
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-flow: max-content;
+    gap: var(--sp-base);
+    padding: var(--sp-base);
+    background-color: var(--bg-tertiary);
+    border-radius: var(--bd-radius);
+    border: var(--bd);
+}
+
+.nav__link {
+    --indicator: var(--hi-primary);
+    --indicator-size: 6px;
+    --indicator-offset: 8px;
+
+    position: relative;
+
+    display: grid;
+    place-content: center;
+    border-radius: calc(2/3*var(--bd-radius));
+    
+    padding: var(--sp-base);
+
+    color: var(--fg-primary);
+
+    overflow: hidden;
+}
+
+.nav__link::before {
+    content: "";
+
+    position: absolute;
+    width: var(--indicator-size);
+    height: var(--indicator-size);
+    left: calc( 
+        50% -
+        1 / 2 * var(--indicator-size)
+    );
+    bottom: calc(
+        -2 * var(--indicator-offset)
+    );
+    border-radius: 50%;
+    background-color: var(--indicator-hi);
+
+    transition: var(--transition);
+    transition-property: bottom;
+}
+.nav__link:hover::before, 
+.nav__link--active::before {
+    bottom: var(--indicator-offset);
+}
+
+.nav__link--active {
+    background-color: var(--bg-primary);
+}
+
+.nav__link:hover, 
+.nav__link--active {
+    color: var(--indicator-hi);
+}
+
+.nav__link > * {
+    transition: transform var(--transition);
+}
+
+.nav__link:hover,
+.nav__link--active {
+    transform: translateY(calc(-1*var(--sp-sm-5)));
+}
